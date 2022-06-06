@@ -522,12 +522,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
+.left-6 {
+  left: 1.5rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
 .z-50 {
   z-index: 50;
 }
 
 .z-40 {
   z-index: 40;
+}
+
+.-z-50 {
+  z-index: -50;
 }
 
 .mx-auto {
@@ -676,6 +692,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -696,6 +718,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
 .bg-lightGray {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 96% / var(--tw-bg-opacity));
@@ -714,6 +753,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-progressBraLightGray {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 85% / var(--tw-bg-opacity));
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-5 {
@@ -746,6 +789,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-center {
