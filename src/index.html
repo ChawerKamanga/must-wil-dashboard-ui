@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../dist/style.css" />
+    <script src="js/script.js" defer></script>
   </head>
   <body class="bg-lightGray">
     <!-- Dashboard Top Header -->
@@ -19,7 +20,7 @@
       <div class="container max-w-6xl mx-auto px-5 py-5">
         <div class="flex flex-row justify-between items-center">
           <!-- Hamburger Button -->
-          <div class="md:hidden">
+          <div class="md:hidden z-50">
             <button
               id="menu-btn"
               type="button"
@@ -44,6 +45,18 @@
           </div>
         </div>
       </div>
+
+      <!-- @TODO- Change Mobile Menu -->
+      <div
+        id="menu"
+        class="absolute top-0 bottom-0 z-40 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-darkBlue"
+      >
+        <a href="#" class="hover:text-pink-500">About</a>
+        <a href="#" class="hover:text-pink-500">Careers</a>
+        <a href="#" class="hover:text-pink-500">Events</a>
+        <a href="#" class="hover:text-pink-500">Products</a>
+        <a href="#" class="hover:text-pink-500">Support</a>
+      </div>
     </header>
 
     <!-- Assessment Progress Card -->
@@ -53,14 +66,19 @@
           <div>
             <h4 class="font-semibold">Assessment Progress</h4>
           </div>
-
           <!-- Progress SVG -->
           <div class="mt-5 flex justify-center">
-            <img
-              src="../images/maxresdefault.jpg"
-              class="w-56"
-              alt="Progress bar image"
-            />
+            <div class="card flex items-center justify-center flex-col my-0 mx-20 w-[280px] h-[280px]">
+              <div class="percent relative">
+                <svg>
+                  <circle cx="105" cy="105" r="100"></circle>
+                  <circle cx="105" cy="105" r="100" style="--percent: 55"></circle>
+                </svg>
+                <div class="number">
+                  <h3>55<span>%</span></h3>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Progress Stats -->
@@ -92,7 +110,6 @@
     <!-- Organizations Progress -->
     <section>
       <div class="container max-w-6xl mx-auto px-5 py-5">
-
         <!-- Organization 1 -->
         <div class="bg-white px-5 py-3 rounded-xl flex flex-col">
           <div class="flex">
@@ -122,7 +139,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -131,11 +147,7 @@
           <div class="flex">
             <!-- Logo -->
             <div>
-              <img
-                src="../images/mhub.png"
-                class="w-20"
-                alt="fdh logo"
-              />
+              <img src="../images/mhub.png" class="w-20" alt="fdh logo" />
             </div>
 
             <!-- Organization Description -->
@@ -155,20 +167,15 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
-         <!-- Organization 3 -->
-         <div class="bg-white px-5 py-3 rounded-xl flex flex-col mt-5">
+        <!-- Organization 3 -->
+        <div class="bg-white px-5 py-3 rounded-xl flex flex-col mt-5">
           <div class="flex">
             <!-- Logo -->
             <div>
-              <img
-                src="../images/mzuzu_ehub.png"
-                class="w-20"
-                alt="fdh logo"
-              />
+              <img src="../images/mzuzu_ehub.png" class="w-20" alt="fdh logo" />
             </div>
 
             <!-- Organization Description -->
@@ -188,7 +195,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -197,11 +203,7 @@
           <div class="flex">
             <!-- Logo -->
             <div>
-              <img
-                src="../images/maneb.png"
-                class="w-20"
-                alt="fdh logo"
-              />
+              <img src="../images/maneb.png" class="w-20" alt="fdh logo" />
             </div>
 
             <!-- Organization Description -->
@@ -221,7 +223,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
