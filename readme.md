@@ -1,4 +1,4 @@
-## MUST WORK INTEGRATED LEARNING ONLINE EVALUATION SYSTEM
+## MUST WILONLINE EVALUATION SYSTEM UI
 
 ### Installation 
 - Make sure you have [nodejs](https://nodejs.org/en/) installed
