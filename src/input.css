@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.inactive-nav-item {
+    @apply flex flex-col justify-center items-center px-4 transition-all duration-200 hover:bg-gray-300 hover:text-darkBlue;
+  }
+
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;
