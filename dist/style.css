@@ -518,6 +518,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 40;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -542,12 +546,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .ml-2 {
@@ -592,6 +600,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-12 {
   height: 3rem;
+}
+
+.h-\[220px\] {
+  height: 220px;
 }
 
 .h-\[280px\] {
@@ -678,6 +690,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: flex-start;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -710,16 +726,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
 .rounded-sm {
   border-radius: 0.125rem;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
 }
 
 .border-t {
@@ -746,19 +762,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-darkBlue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(218 37% 44% / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-darkBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(218 37% 44% / var(--tw-bg-opacity));
+}
+
 .bg-progressBraLightGray {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 85% / var(--tw-bg-opacity));
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-6 {
@@ -802,14 +822,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -850,10 +875,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
 }
 
 .duration-500 {
@@ -965,6 +986,105 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 3.5rem;
 }
 
+/* Bigger Progress Bar */
+
+.circle-container {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 100%;
+  left: 10px;
+  top: 35px;
+}
+
+.inner-circle {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+}
+
+.smaller-circle {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d4d4d4;
+}
+
+.top-semicircle{
+  width: 150px;
+  height: 75px;
+  background: #7993BF;
+  border-radius: 150px 150px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bottom-semicircle {
+  width: 150px;
+  height: 75px;
+  background: #7993BF;
+  border-radius: 0 0 150px 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rectangle1 {
+  height: 75px;
+  width: 150px;
+  background-color: #fff;
+  position: absolute;
+  top: 75px;
+  transform-origin: 50% 0;
+  -webkit-animation: animation1 3s forwards linear;
+          animation: animation1 3s forwards linear;
+}
+
+.rectangle2 {
+  height: 75px;
+  width: 150px;
+  background-color: #fff;
+  position: absolute;
+  top: -75px;
+  transform-origin: 50% 100%;
+  -webkit-animation: animation2 1.5s forwards linear;
+          animation: animation2 1.5s forwards linear;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+@-webkit-keyframes animation1 {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes animation1 {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes animation2 {
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes animation2 {
+  to {
+    transform: rotate(90deg);
+  }
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -988,3 +1108,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 }
+
+
+
+

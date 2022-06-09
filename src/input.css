@@ -90,3 +90,90 @@
   font-weight: 200;
   font-size: 3.5rem;
 }
+
+/* Bigger Progress Bar */
+.circle-container {
+  width: 150px;
+  height: 150px;
+  position: relative; 
+  border-radius: 100%;
+  left: 10px;
+  top: 35px;
+}
+
+.inner-circle {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+} 
+
+.smaller-circle {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d4d4d4;
+}
+
+.top-semicircle{
+  width: 150px;
+  height: 75px;
+  background: #7993BF;
+  border-radius: 150px 150px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bottom-semicircle {
+  width: 150px;
+  height: 75px;
+  background: #7993BF;
+  border-radius: 0 0 150px 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rectangle1 {
+  height: 75px;
+  width: 150px;
+  background-color: #fff;
+  position: absolute;
+  top: 75px;
+  transform-origin: 50% 0;
+  animation: animation1 3s forwards linear;
+}
+
+.rectangle2 {
+  height: 75px;
+  width: 150px;
+  background-color: #fff;
+  position: absolute;
+  top: -75px;
+  transform-origin: 50% 100%;
+  animation: animation2 1.5s forwards linear;
+  animation-delay: 3s;
+}
+
+@keyframes animation1 {
+  to {
+      transform: rotate(180deg);
+  }
+}
+
+@keyframes animation2 {
+  to {
+      transform: rotate(90deg);
+  }
+}
+
+
+
+
