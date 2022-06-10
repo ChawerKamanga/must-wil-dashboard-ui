@@ -174,6 +174,80 @@
   }
 }
 
+/* Organization Circle Progress Bar */
+.org-circle-container {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  position: relative;
+  border-radius: 100%;
+}
+
+.org-inner-circle {
+  width: 45px;
+  height: 45px;
+  background-color: #F4F4F4;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.org-top-semicircle{
+  width: 50px;
+  height: 25px;
+  background: #adcbff;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.org-bottom-semicircle {
+  width: 50px;
+  height: 25px;
+  background: #adcbff;
+  border-radius: 0 0 50px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.org-rectangle1 {
+  height: 25px;
+  width: 50px;
+  background-color: #466599;
+  position: absolute;
+  top: 25px;
+  transform-origin: 50% 0;
+  animation: animation3 2s forwards linear;
+}
+
+.org-rectangle2 {
+  height: 25px;
+  width: 55px;
+  background-color: #466599;
+  position: absolute;
+  top: -25px;
+  transform-origin: 50% 100%;
+  animation: animation4 2s forwards linear;
+  animation-delay: 2s;
+}
+
+@keyframes animation3 {
+  to {
+      transform: rotate(180deg);
+  }
+}
+
+@keyframes animation4 {
+  to {
+      transform: rotate(180deg);
+  }
+}
+
 
 
 
