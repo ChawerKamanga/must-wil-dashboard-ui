@@ -3,13 +3,28 @@
 @tailwind utilities;
 
 .inactive-nav-item {
-    @apply flex flex-col justify-center items-center px-4 transition-all duration-200 hover:bg-gray-300 hover:text-darkBlue;
+    @apply transition-all duration-200 hover:bg-gray-300;
   }
 
 .dashboard-th {
   @apply px-6 align-middle border border-solid py-3 text-xs border-l-0 border-r-0 border-t-0 text-left text-gray-600;
 }
 
+.active-menu-item-wrapper {
+  @apply xl:border xl:border-r-8 xl:border-white xl:border-t-0 xl:border-b-0 xl:border-l-0;
+}
+
+.menu-item-link {
+  @apply flex flex-col xl:flex-row xl:space-x-4 justify-center xl:justify-start items-center px-4 xl:py-4;
+}
+
+.menu-icon {
+  @apply h-10 w-10 xl:h-6  xl:w-6;
+}
+
+.menu-text {
+  @apply text-xs xl:text-base;
+}
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;
