@@ -6,6 +6,10 @@
     @apply flex flex-col justify-center items-center px-4 transition-all duration-200 hover:bg-gray-300 hover:text-darkBlue;
   }
 
+.dashboard-th {
+  @apply px-6 align-middle border border-solid py-3 text-xs border-l-0 border-r-0 text-left text-gray-600;
+}
+
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;
