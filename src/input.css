@@ -7,7 +7,7 @@
   }
 
 .dashboard-th {
-  @apply px-6 align-middle border border-solid py-3 text-xs border-l-0 border-r-0 text-left text-gray-600;
+  @apply px-6 align-middle border border-solid py-3 text-xs border-l-0 border-r-0 border-t-0 text-left text-gray-600;
 }
 
 /* Hamburger Menu */
