@@ -1,11 +1,11 @@
 {
-  "name": "simple-tailwind-starter",
+  "name": "MUST WIL Dashboard",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/style.css",
-    "watch": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+    "build": "tailwindcss -i ./input.css -o ./css/style.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch"
   },
   "keywords": [],
   "author": "",
