@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MUST WIL</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../dist/style.css" />
     <script src="js/script.js" defer></script>
   </head>
@@ -213,13 +216,13 @@
                     />
                   </svg>
                   <span
-                    class="menu-text text-gray-300 text-xs group-hover:text-darkBlue"
+                    class="menu-text text-gray-300 text-xs group-hover:text-darkBlue hidden xl:block"
                     >Logout</span
                   >
                 </a>
               </div>
 
-              <div class="hidden">
+              <div class="xl:hidden hidden lg:block">
                 <img
                   src="../images/pic_3.jpg"
                   class="w-16 rounded-full"
@@ -247,7 +250,7 @@
         <!-- Main Content -->
         <div class="flex flex-col w-10/12 items-center mx-auto space-y-10">
           <div class="flex w-full space-x-6">
-            <div class="bg-white rounded-xl w-full xl:w-6/12 mt-5 space-y-6">
+            <div class="bg-white rounded-xl w-full xl:w-7/12 mt-5 space-y-6">
               <div class="w-full mt-2 flex flex-col space-y-6">
                 <!-- Dark Blue Banner -->
                 <div
@@ -287,13 +290,10 @@
                   </div>
                 </div>
 
-                <!-- Organizations Stats Row 1 -->
-                <div
-                  class="flex justify-between space-x-5 mx-auto w-11/12 rounded-lg"
-                >
+                <div class="grid gap-4 lg:grid-cols-3 xl:grid-cols-2 mx-auto w-11/12">
                   <!-- Organization 1 Stats -->
                   <div
-                    class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col w-1/3"
+                    class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col"
                   >
                     <div class="flex">
                       <!-- Progress Bar -->
@@ -322,7 +322,7 @@
 
                   <!-- Organization 2 Stats -->
                   <div
-                    class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col w-1/3"
+                    class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col"
                   >
                     <div class="flex">
                       <!-- Progress Bar -->
@@ -351,7 +351,7 @@
 
                   <!-- Organization 3 Stats -->
                   <div
-                    class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col w-1/3"
+                    class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col"
                   >
                     <div class="flex">
                       <!-- Progress Bar -->
@@ -377,97 +377,93 @@
                       </div>
                     </div>
                   </div>
+
+                   <!-- Organization 4 Stats -->
+                   <div
+                   class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col"
+                 >
+                   <div class="flex">
+                     <!-- Progress Bar -->
+                     <div class="org-circle-container">
+                       <div class="org-top-semicircle">
+                         <div class="org-rectangle1"></div>
+                       </div>
+                       <div class="org-bottom-semicircle">
+                         <div class="org-rectangle2"></div>
+                       </div>
+                       <div class="org-inner-circle">100%</div>
+                     </div>
+
+                     <!-- Organization Description -->
+                     <div class="flex flex-col w-full ml-4">
+                       <h2 class="">EHub</h2>
+                       <div class="flex justify-between mb-2">
+                         <span class="text-textLightGray text-xs">
+                           Mzuzu
+                         </span>
+                         <span class="text-textLightGray text-xs"> 7/7 </span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Organization 5 Stats -->
+                 <div
+                   class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col"
+                 >
+                   <div class="flex">
+                     <!-- Progress Bar -->
+                     <div class="org-circle-container">
+                       <div class="org-top-semicircle">
+                         <div class="org-rectangle1"></div>
+                       </div>
+                       <div class="org-bottom-semicircle">
+                         <div class="org-rectangle2"></div>
+                       </div>
+                       <div class="org-inner-circle">100%</div>
+                     </div>
+
+                     <!-- Organization Description -->
+                     <div class="flex flex-col w-full ml-4">
+                       <h2 class="">MANEB</h2>
+                       <div class="flex justify-between mb-2">
+                         <span class="text-textLightGray text-xs">Zomba</span>
+                         <span class="text-textLightGray text-xs"> 7/7 </span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <!-- Organization 6 Stats -->
+                 <div
+                   class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col"
+                 >
+                   <div class="flex">
+                     <!-- Progress Bar -->
+                     <div class="org-circle-container">
+                       <div class="org-top-semicircle">
+                         <div class="org-rectangle1"></div>
+                       </div>
+                       <div class="org-bottom-semicircle">
+                         <div class="org-rectangle2"></div>
+                       </div>
+                       <div class="org-inner-circle">100%</div>
+                     </div>
+
+                     <!-- Organization Description -->
+                     <div class="flex flex-col w-full ml-4">
+                       <h2 class="">MUST</h2>
+                       <div class="flex justify-between mb-2">
+                         <span class="text-textLightGray text-xs">
+                           Thyolo
+                         </span>
+                         <span class="text-textLightGray text-xs"> 7/7 </span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
                 </div>
 
-                <!-- Organizations Stats Row 2 -->
-                <div
-                  class="flex justify-between space-x-5 mx-auto w-11/12 rounded-lg"
-                >
-                  <!-- Organization 1 Stats -->
-                  <div
-                    class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col w-1/3"
-                  >
-                    <div class="flex">
-                      <!-- Progress Bar -->
-                      <div class="org-circle-container">
-                        <div class="org-top-semicircle">
-                          <div class="org-rectangle1"></div>
-                        </div>
-                        <div class="org-bottom-semicircle">
-                          <div class="org-rectangle2"></div>
-                        </div>
-                        <div class="org-inner-circle">100%</div>
-                      </div>
-
-                      <!-- Organization Description -->
-                      <div class="flex flex-col w-full ml-4">
-                        <h2 class="">EHub</h2>
-                        <div class="flex justify-between mb-2">
-                          <span class="text-textLightGray text-xs">
-                            Mzuzu
-                          </span>
-                          <span class="text-textLightGray text-xs"> 7/7 </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Organization 2 Stats -->
-                  <div
-                    class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col w-1/3"
-                  >
-                    <div class="flex">
-                      <!-- Progress Bar -->
-                      <div class="org-circle-container">
-                        <div class="org-top-semicircle">
-                          <div class="org-rectangle1"></div>
-                        </div>
-                        <div class="org-bottom-semicircle">
-                          <div class="org-rectangle2"></div>
-                        </div>
-                        <div class="org-inner-circle">100%</div>
-                      </div>
-
-                      <!-- Organization Description -->
-                      <div class="flex flex-col w-full ml-4">
-                        <h2 class="">MANEB</h2>
-                        <div class="flex justify-between mb-2">
-                          <span class="text-textLightGray text-xs">Zomba</span>
-                          <span class="text-textLightGray text-xs"> 7/7 </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Organization 3 Stats -->
-                  <div
-                    class="bg-[#F4F4F4] px-5 py-3 rounded-lg flex flex-col w-1/3"
-                  >
-                    <div class="flex">
-                      <!-- Progress Bar -->
-                      <div class="org-circle-container">
-                        <div class="org-top-semicircle">
-                          <div class="org-rectangle1"></div>
-                        </div>
-                        <div class="org-bottom-semicircle">
-                          <div class="org-rectangle2"></div>
-                        </div>
-                        <div class="org-inner-circle">100%</div>
-                      </div>
-
-                      <!-- Organization Description -->
-                      <div class="flex flex-col w-full ml-4">
-                        <h2 class="">MUST</h2>
-                        <div class="flex justify-between mb-2">
-                          <span class="text-textLightGray text-xs">
-                            Thyolo
-                          </span>
-                          <span class="text-textLightGray text-xs"> 7/7 </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div></div>
               </div>
             </div>
