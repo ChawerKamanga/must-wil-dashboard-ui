@@ -606,6 +606,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 220px;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -756,6 +764,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -788,8 +802,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-b {
@@ -810,6 +832,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-t {
   border-top-width: 1px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-gray-200 {
@@ -852,6 +879,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(244 244 244 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F5B34C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 179 76 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#578680\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 134 128 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#4F4F4F\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 79 79 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#BC0000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(188 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -878,6 +925,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
@@ -958,6 +1013,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -971,12 +1031,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .font-semibold {
   font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .text-white {
@@ -997,6 +1057,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-textLightGray {
   --tw-text-opacity: 1;
   color: hsl(0 0% 51% / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .text-green-800 {
@@ -1041,7 +1106,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  text-align: left;
   vertical-align: middle;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1438,10 +1502,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:w-64 {
     width: 16rem;
-  }
-
-  .xl\:w-7\/12 {
-    width: 58.333333%;
   }
 
   .xl\:grid-cols-2 {
