@@ -574,6 +574,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -678,6 +686,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 40%;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -758,6 +770,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -910,6 +928,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -950,6 +978,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -960,6 +993,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .text-\[\#344461\] {
@@ -1384,11 +1421,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(218 37% 44% / var(--tw-text-opacity));
 }
 
-.group:hover .group-hover\:text-\[\#344461\] {
-  --tw-text-opacity: 1;
-  color: rgb(52 68 97 / var(--tw-text-opacity));
-}
-
 @media (min-width: 900px) {
   .lg\:relative {
     position: relative;
@@ -1401,9 +1433,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:hidden {
     display: none;
   }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media (min-width: 1240px) {
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:h-\[96\%\] {
+    height: 96%;
+  }
+
+  .xl\:h-\[94\%\] {
+    height: 94%;
+  }
+
   .xl\:w-64 {
     width: 16rem;
   }
@@ -1412,16 +1465,19 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
+  .xl\:w-full {
+    width: 100%;
+  }
+
   .xl\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
   }
 
-  .xl\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
