@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUST WIL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="bg-lightGray">
+    <!-- @Mobile Phone Dashboard Top Header -->
+    <header class="lg:hidden">
+      <div class="container max-w-6xl mx-auto px-5 py-5">
+        <div class="flex flex-row justify-between items-center">
+          <!-- Hamburger Button -->
+          <div class="lg:hidden z-50">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger lg:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+
+          <div>
+            <h1 class="text-2xl font-bold">MUST WIL</h1>
+          </div>
+
+          <div>
+            <img
+              src="images/pic_3.jpg"
+              class="w-10 rounded-full"
+              alt="profile pic"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="absolute hidden p-6 rounded-lg bg-darkBlue left-6 right-6 top-20 z-100 z-50 transition-all duration-500"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+        >
+          <a href="dashboard.html" class="w-full text-center">Dashboard</a>
+          <a href="organization.html" class="w-full text-center"
+            >Organizations</a
+          >
+          <a href="#" class="w-full text-center">Interns</a>
+          <a href="#" class="w-full text-center">Industrial Supervisors</a>
+          <a href="#" class="w-full text-center">Academic Supervisors</a>
+          <a href="#" class="w-full text-center">Programs</a>
+          <a href="#" class="w-full text-center">Examinations</a>
+          <a href="#" class="w-full pt-6 border-t border-gray-400 text-center"
+            >Logout</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="lg:relative">
+      <div class="flex justify-between">
+        <!-- NavBar -->
+        <nav class="w-36 xl:w-64 h-screen bg-veryDarkBlue hidden lg:block">
+          <div class="mt-5 flex h-[92%] xl:h-[94%] flex-col justify-between">
+            <!-- Top Navs -->
+            <div class="space-y-8 xl:space-y-2">
+              <div class="hidden xl:flex justify-center items-center mb-10">
+                <span class="text-white text-xl font-light">MUST WIL</span>
+              </div>
+              <!-- Menu Item 1 -->
+              <div class="">
+                <a
+                  href="dashboard.html"
+                  class="menu-item-link group inactive-nav-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="menu-icon text-gray-300 group-hover:text-darkBlue"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span
+                    class="menu-text text-gray-300 text-xs group-hover:text-darkBlue"
+                    >Dashboard</span
+                  >
+                </a>
+              </div>
+
+              <!-- Menu Item 2 -->
+              <div class="active-menu-item-wrapper group">
+                <a href="organization.html" class="menu-item-link bg-gray-300">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="menu-icon text-[#344461]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    />
+                  </svg>
+                  <span class="menu-text text-[#344461]">Organizations</span>
+                </a>
+              </div>
+
+              <!-- Menu Item 3 -->
+              <div>
+                <a href="#" class="menu-item-link group inactive-nav-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="menu-icon text-gray-300 group-hover:text-darkBlue"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  <span
+                    class="menu-text text-gray-300 text-xs group-hover:text-darkBlue"
+                    >Interns</span
+                  >
+                </a>
+              </div>
+
+              <!-- Menu Item 4 -->
+              <div>
+                <a href="#" class="menu-item-link group inactive-nav-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="menu-icon text-gray-300 group-hover:text-darkBlue"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                    />
+                  </svg>
+                  <span
+                    class="menu-text text-gray-300 text-xs group-hover:text-darkBlue"
+                    >Ind. Supervisors</span
+                  >
+                </a>
+              </div>
+
+              <!-- Menu Item 5 -->
+              <div>
+                <a href="#" class="menu-item-link group inactive-nav-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="menu-icon text-gray-300 group-hover:text-darkBlue"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path
+                      d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                    />
+                  </svg>
+                  <span
+                    class="menu-text text-gray-300 text-xs group-hover:text-darkBlue"
+                    >Acad. Supervisors</span
+                  >
+                </a>
+              </div>
+
+              <!-- Menu Item 6 -->
+              <div>
+                <a href="#" class="menu-item-link group inactive-nav-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="menu-icon text-gray-300 group-hover:text-darkBlue"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                    />
+                  </svg>
+                  <span
+                    class="menu-text text-gray-300 text-xs group-hover:text-darkBlue"
+                    >Programs</span
+                  >
+                </a>
+              </div>
+              <!-- Menu Item 7 -->
+              <div>
+                <a href="#" class="menu-item-link group inactive-nav-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="menu-icon text-gray-300 group-hover:text-darkBlue"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                  <span
+                    class="menu-text text-gray-300 text-xs group-hover:text-darkBlue"
+                    >Asessments</span
+                  >
+                </a>
+              </div>
+            </div>
+
+            <!-- Logout & profile nav -->
+            <div
+              class="flex flex-col space-y-8 justify-center items-center px-4 xl:px-0 xl:space-y-2"
+            >
+              <div class="w-full">
+                <a href="#" class="menu-item-link group inactive-nav-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="menu-icon text-gray-300 group-hover:text-darkBlue"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                    />
+                  </svg>
+                  <span
+                    class="menu-text text-gray-300 text-xs group-hover:text-darkBlue hidden xl:block"
+                    >Logout</span
+                  >
+                </a>
+              </div>
+
+              <div class="xl:hidden hidden lg:block">
+                <img
+                  src="images/pic_3.jpg"
+                  class="w-16 rounded-full"
+                  alt="profile pic"
+                />
+              </div>
+
+              <div class="hidden xl:block w-full">
+                <div class="flex space-x-3 text-white px-4">
+                  <img src="images/pic_3.jpg" class="w-12" alt="profile pic" />
+                  <div class="flex flex-col">
+                    <h6 class="text-lg">Janet Lusale</h6>
+                    <span class="text-sm">Accademic Supervisor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <section
+          class="lg:w-10/12 w-full lg:items-center lg:mx-auto space-y-10"
+        >
+          <div class="container max-w-6xl mx-auto px-5 py-5">
+            <div>
+              <h1 class="text-veryDarkBlue text-3xl font-bold">
+                Organizations
+              </h1>
+            </div>
+            <div class="flex justify-between items-center my-4">
+              <!-- Search bar -->
+              <div>
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="py-2 px-4 text-left w-[300px] text-gray-700 border placeholder:text-left border-gray-300 rounded-md placeholder:text-base focus:border-gray-200 focus:outline-none"
+                />
+              </div>
+              <!-- Create button -->
+              <div>
+                <a
+                  href="#"
+                  class="bg-veryDarkBlue text-white py-2 px-4 rounded-md hidden lg:block"
+                  >Create Organization</a
+                >
+                <a
+                  href="#"
+                  class="bg-veryDarkBlue text-white py-2 px-4 rounded-md lg:hidden"
+                  >Create</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Assessment Progress Card -->
+  </body>
+</html>
