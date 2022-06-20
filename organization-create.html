@@ -301,62 +301,76 @@
           </div>
         </nav>
 
-        <section class="lg:w-11/12 rounded-lg w-full m-4 space-y-5">
-          <div>
-            <h1 class="text-veryDarkBlue text-2xl font-bold">
-              Create Organization
-            </h1>
-          </div>
-          <form
-            action="#"
-            method="post"
-            class="flex flex-col w-full space-y-5  bg-white p-5 rounded-lg"
-          >
-            <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-5 space-y-5 lg:space-y-0">
-              <div class="w-full">
-                <label for="name"
-                  >Organization Name<sup class="text-red-500">*</sup></label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  class="py-2 px-4 text-left w-full text-gray-700 border placeholder:text-left border-gray-300 rounded-md placeholder:text-base focus:border-gray-200 focus:outline-none"
-                />
-              </div>
-              <div class="w-full">
-                <label for="industrial-supervisor"
-                  >Industrial Supervisor<sup class="text-red-500">*</sup></label
-                >
-                <input
-                  type="text"
-                  id="industrial-supervisor"
-                  class="py-2 px-4 text-left w-full text-gray-700 border placeholder:text-left border-gray-300 rounded-md placeholder:text-base focus:border-gray-200 focus:outline-none"
-                />
-              </div>
+        <section
+          class="w-full lg:w-10/12 lg:items-center m-4 mx-auto"
+        >
+        <div class="container w-full mx-auto px-5 py-5 flex flex-col space-y-5">
+            <div>
+              <h1 class="text-veryDarkBlue text-3xl font-bold">
+                Create Organization
+              </h1>
             </div>
-            <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-5 space-y-5 lg:space-y-0">
-                <div>
-                  <label for="location"
-                    >Location<sup class="text-red-500">*</sup></label
+            <div class="flex lg:flex-row flex-col lg:space-x-10 space-y-10 lg:space-y-0">
+                <form
+                  action="#"
+                  method="post"
+                  class="flex flex-col w-full space-y-5 bg-white p-5 rounded-lg"
+                >
+                  <div
+                    class="flex flex-col lg:flex-row space-x-0 lg:space-x-5 space-y-5 lg:space-y-0"
                   >
-                  <input
-                    type="text"
-                    id="location"
-                    class="py-2 px-4 text-left w-full text-gray-700 border placeholder:text-left border-gray-300 rounded-md placeholder:text-base focus:border-gray-200 focus:outline-none"
-                  />
-                </div>
-                <div>
-                  <label for="logo"
-                    >Organization Logo<sup class="text-red-500">*</sup></label
+                    <div class="w-full">
+                      <label for="name"
+                        >Organization Name<sup class="text-red-500">*</sup></label
+                      >
+                      <input
+                        type="text"
+                        id="name"
+                        class="py-2 px-4 text-left w-full text-gray-700 border placeholder:text-left border-gray-300 rounded-md placeholder:text-base focus:border-gray-200 focus:outline-none"
+                      />
+                    </div>
+                    <div class="w-full">
+                      <label for="industrial-supervisor"
+                        >Industrial Supervisor<sup class="text-red-500">*</sup></label
+                      >
+                      <input
+                        type="text"
+                        id="industrial-supervisor"
+                        class="py-2 px-4 text-left w-full text-gray-700 border placeholder:text-left border-gray-300 rounded-md placeholder:text-base focus:border-gray-200 focus:outline-none"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col lg:flex-row space-x-0 lg:space-x-5 space-y-5 lg:space-y-0"
                   >
-                  <input
-                    type="file"
-                    id="location"
-                    class="py-2 px-4 text-left w-full text-gray-700 border placeholder:text-left border-gray-300 rounded-md placeholder:text-base focus:border-gray-200 focus:outline-none"
-                  />
+                    <div class="w-full">
+                      <label for="name"
+                        >Location<sup class="text-red-500">*</sup></label
+                      >
+                      <input
+                        type="text"
+                        id="name"
+                        class="py-2 px-4 text-left w-full text-gray-700 border placeholder:text-left border-gray-300 rounded-md placeholder:text-base focus:border-gray-200 focus:outline-none"
+                      />
+                    </div>
+                    <div class="w-full">
+                      <label for="industrial-supervisor"
+                        >Logo<sup class="text-red-500">*</sup></label
+                      >
+                      <input
+                        type="file"
+                        id="industrial-supervisor"
+                        class="py-2 px-4 text-left w-full text-gray-700 border placeholder:text-left border-gray-300 rounded-md placeholder:text-base focus:border-gray-200 focus:outline-none"
+                      />
+                    </div>
+                  </div>
+                </form>
+
+                <div class="bg-white p-10">
+                    <h4>Hello World</h4>
                 </div>
             </div>
-          </form>
+        </div>
         </section>
       </div>
     </main>
