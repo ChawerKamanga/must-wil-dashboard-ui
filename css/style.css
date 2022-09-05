@@ -1205,6 +1205,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(22 101 52 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1672,9 +1677,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
-.focus\:border-\[\#019835\]:focus {
+.focus\:border-\[\#4b73b9\]:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(1 152 53 / var(--tw-border-opacity));
+  border-color: rgb(75 115 185 / var(--tw-border-opacity));
 }
 
 .focus\:outline-none:focus {
